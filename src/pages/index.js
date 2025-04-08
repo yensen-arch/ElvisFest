@@ -2,6 +2,7 @@ import HeroCarousel from '../components/HeroCarousel';
 import About from '../components/About';
 import ImageReel from '../components/ImageReel';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -22,6 +23,10 @@ export default function Home() {
       <section className="relative py-20">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-purple-900/20 to-black pointer-events-none" />
         <ImageReel />
+      </section>
+
+      <section className="relative">
+        <Footer />
       </section>
 
 

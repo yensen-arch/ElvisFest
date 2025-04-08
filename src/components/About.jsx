@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import ElvisFestBanner from './ElvisFestBanner';
 
 const festivalInfo = [
   {
@@ -48,7 +49,8 @@ export default function About() {
           transition={{ duration: 0.8 }}
           className="text-gold text-5xl font-elvis text-center my-80"
         >
-          V4V Presents - Elvis Fest 2025
+          <p> V4V Presents - Elvis Fest 2025</p>
+          <ElvisFestBanner />
         </motion.h2>
 
         <div className="space-y-32">
