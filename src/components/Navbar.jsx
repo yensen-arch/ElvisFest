@@ -70,12 +70,12 @@ export default function Navbar({ currentPage }) {
       </div>
 
       {/* Main Navbar */}
-      <nav className="bg-gradient-to-r from-slate-300 to-slate-900 text-white py-1 px-4 md:px-6 flex justify-between items-center">
+      <nav className="bg-gradient-to-r border-b border-yellow-500 border-1 from-slate-300 to-slate-900 text-white py-1 px-4 md:px-6 flex justify-between items-center">
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <Image
               src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/A5sZrCUHQ0c3ChwA0Fz5/media/66f36b68e8902d21ddeaee88.png"
-              alt="Elvis Logo"
+              alt="V4V Logo"
               width={180}
               height={90}
               className="w-24 md:w-32 lg:w-40 mr-4"
