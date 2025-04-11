@@ -69,8 +69,8 @@ export default function Navbar({ currentPage }) {
       </div>
 
       {/* Main Navbar */}
-      <nav className="bg-slate-200 text-white py-4 px-6 flex justify-between items-center">
-        <div className="flex items-center">
+      <nav className="bg-gradient-to-r from-slate-300 to-slate-700 text-white py-1 px-6 flex justify-between items-center">
+      <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <Image
               src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/A5sZrCUHQ0c3ChwA0Fz5/media/66f36b68e8902d21ddeaee88.png"
@@ -99,7 +99,24 @@ export default function Navbar({ currentPage }) {
           >
             Vendors
           </Link>
+          <Link
+            href="/hotels"
+            className={`text-lg font-medium hover:text-yellow-400 transition-colors ${
+              currentPage === "hotels" ? "text-yellow-400 border-b-2 border-yellow-400" : ""
+            }`}
+          >
+            Hotels
+          </Link>
+          <Link
+            href="/restaurants"
+            className={`text-lg font-medium hover:text-yellow-400 transition-colors ${
+              currentPage === "restaurants" ? "text-yellow-400 border-b-2 border-yellow-400" : ""
+            }`}
+          >
+            Restaurants
+          </Link>
         </div>
+        
 
         <div className="flex items-center space-x-4">
           <button className="bg-yellow-400 text-black font-bold px-4 py-2 rounded hover:bg-yellow-300 transition-colors">
