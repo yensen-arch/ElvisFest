@@ -158,7 +158,7 @@ function Vendors() {
                   <span className="text-white/80">Social Media Promotion</span>
                 </li>
               </ul>
-              <button className="w-full bg-gold hover:bg-white text-black py-3 rounded-lg font-semibold transition-colors duration-300">
+              <button className="w-full bg-yellow-600 hover:bg-gold text-white hover:text-black py-3 rounded-lg font-semibold transition-colors duration-300">
                 Select Premium
               </button>
             </div>
@@ -297,7 +297,7 @@ function Vendors() {
                 <label htmlFor="terms" className="text-white/80">I agree to the vendor terms and conditions</label>
               </div>
               
-              <button type="submit" className="w-full bg-gold hover:bg-white text-black py-4 rounded-lg font-bold text-lg transition-colors duration-300">
+              <button type="submit" className="w-full bg-yellow-500 hover:bg-gold text-white hover:text-black py-4 rounded-lg font-bold text-lg transition-colors duration-300">
                 Submit Application
               </button>
             </form>
