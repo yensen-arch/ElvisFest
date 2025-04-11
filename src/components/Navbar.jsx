@@ -70,7 +70,7 @@ export default function Navbar({ currentPage }) {
       </div>
 
       {/* Main Navbar */}
-      <nav className="bg-gradient-to-r from-slate-300 to-slate-700 text-white py-1 px-4 md:px-6 flex justify-between items-center">
+      <nav className="bg-gradient-to-r from-slate-300 to-slate-900 text-white py-1 px-4 md:px-6 flex justify-between items-center">
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <Image
@@ -139,13 +139,12 @@ export default function Navbar({ currentPage }) {
             Hotels
           </Link>
           <Link
-            href="/restaurants"
+            href="/schedule"
             className={`text-sm font-medium hover:text-yellow-400 transition-colors ${
-              currentPage === "restaurants" ? "text-yellow-400 border-b-2 border-yellow-400" : ""
+              currentPage === "schedule" ? "text-yellow-400 border-b-2 border-yellow-400" : ""
             }`}
-          >
-            Restaurants
-          </Link>
+          >Schedule</Link>
+          
         </div>
 
         {/* Mobile Navigation */}
@@ -198,17 +197,18 @@ export default function Navbar({ currentPage }) {
               }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Hotels
+              Hotels 
             </Link>
             <Link
-              href="/restaurants"
+              href="/schedule"
               className={`text-lg font-medium hover:text-yellow-400 transition-colors ${
-                currentPage === "restaurants" ? "text-yellow-400 border-b-2 border-yellow-400" : ""
+                currentPage === "schedule" ? "text-yellow-400 border-b-2 border-yellow-400" : ""
               }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Restaurants
+              Schedule 
             </Link>
+            
             <button className="bg-yellow-400 text-black font-bold px-6 py-2 rounded hover:bg-yellow-300 transition-colors">
               BUY TICKETS
             </button>
